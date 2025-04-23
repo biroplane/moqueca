@@ -1,1 +1,0 @@
-import{X as n,a7 as s,a8 as r,a9 as o,aa as i}from"./Dp9Z6tR8.js";function u(t){var e;const a=t||n();return((e=a==null?void 0:a.ssrContext)==null?void 0:e.head)||(a==null?void 0:a.runWithContext(()=>{if(s())return r(o)}))}function d(t,a={}){const e=u(a.nuxt);if(e)return i(t,{head:e,...a})}export{u as i,d as u};

@@ -82,10 +82,10 @@ async function onPlay() {
 
 <template>
   <main class="">
-    <div class="h-[30dvh] md:h-[50dvh]  flex justify-center items-center gap-8 w-full max-w-fit">
+    <div class="h-[70dvh] md:h-[50dvh]  flex flex-col md:flex-row justify-center items-center gap-8 w-full max-w-fit">
       <div class="">
-        <div class="grid w-64 aspect-square ">
-          <img ref="albumCover" loading="lazy" :src="albumCoverUrl" class="bg-white/30  w-64 rounded-full spin aspect-square object-cover relative col-start-1 col-end-2 row-start-1 row-end-2 z-0" :class="{ play: isPlaying }">
+        <div class="grid w--32 md:w-64 aspect-square ">
+          <img ref="albumCover" loading="lazy" :src="albumCoverUrl" class="bg-white/30 w-48 md:w-64 rounded-full spin aspect-square object-cover relative col-start-1 col-end-2 row-start-1 row-end-2 z-0" :class="{ play: isPlaying }">
           <div class="col-start-1 col-end-2 row-start-1 row-end-2 flex items-center justify-center">
             <button class="cursor-pointer" @click="onPlay">
               <Icon :name="isPlaying ? 'i-line-md-pause' : 'i-line-md-pause-to-play-filled-transition'" size="64" />
@@ -97,7 +97,7 @@ async function onPlay() {
         <!-- <iframe id="myplayer" width="100%" height="auto" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&feed=%2Fofficialbiro%2Fbass-cuddles%2F" frameborder="0" @load="initializePlayer"   /> -->
       </div>
       <div class="">
-        <img loading="lazy" src="/logo_flat.svg" alt="logo" class="w-48 h-auto -ml-8">
+        <img loading="lazy" src="/logo_flat.svg" alt="logo" class="w-48 h-auto md:-ml-8">
         <h1 class="text-xl md:text-3xl ">
           Let's mix up the party!
         </h1>
@@ -106,7 +106,7 @@ async function onPlay() {
         </button>
       </div>
     </div>
-    <div class="py-4 max-w-none grid grid-cols-3 gap-8">
+    <div class="py-4 max-w-none grid md:grid-cols-3 gap-4 md:gap-8">
       <h2 class="text-3xl font-bold col-span-full">
         Prossime date
       </h2>

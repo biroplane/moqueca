@@ -1,0 +1,1 @@
+.spin{animation:spin 10s linear 0s infinite forwards;animation-play-state:paused}.spin.play{animation-play-state:running}@keyframes spin{to{rotate:1turn}}.long-shadow{box-shadow:1px 1px #fff,2px 2px #fff,3px 3px #fff,4px 4px #fff,5px 5px #fff,6px 6px #fff,7px 7px #fff,8px 8px #fff,}

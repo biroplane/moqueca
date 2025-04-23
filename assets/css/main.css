@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-body: 'Montserrat', sans-serif;
+}
+
+body {
+  @apply font-body;
+  background: #101011;
+  color: white
+}
